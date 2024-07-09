@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="card text-center">  
+    <div class="card-body" > 
+       <h1> Welcome to Poll Site!</h1>
+       <h4> Dive into Dynamic Polls</h4>
+    <p>Explore a wide range of polls and contribute your perspective on various issues.</p>
+    <a class="btn btn-dark" href = "{% url 'polls:index' %}"> 
+        View Available Polls! </a>   
+    </div>
+</div>
+{% endblock %}
